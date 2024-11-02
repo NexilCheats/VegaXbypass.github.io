@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VegaX Bypass</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS -->
+</head>
+<body>
+    <div id="form-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-btn">Login</button>
+        <button id="signup-btn">Sign Up</button>
+    </div>
+
+    <div id="signup-container" class="hidden">
+        <h2>Sign Up</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="text" id="signup-username" placeholder="Username">
+        <input type="password" id="signup-password" placeholder="Password">
+        <input type="password" id="confirm-password" placeholder="Confirm Password">
+        <button id="submit-signup">Sign Up</button>
+        <button id="back-to-login">Back to Login</button>
+    </div>
+
+    <div id="main-app" class="hidden">
+        <h2 id="welcome-message"></h2>
+        <button id="vega-download">VegaX Download</button>
+        <button id="option-key">Key</button>
+        <button id="logout-btn" class="hidden">Logout</button>
+
+        <!-- Admin Controls Section: Only visible to 'admin' -->
+        <div id="admin-controls" style="display: none;">
+            <h3>Admin Controls</h3>
+            <button onclick="banUser()">Ban User</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to your JS -->
+</body>
+</html>
